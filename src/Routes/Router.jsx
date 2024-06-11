@@ -3,6 +3,8 @@ import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home/Home";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Apartment from "../pages/Apartment";
+import Login from "../pages/Authentication/Login";
+import SignUp from "../pages/Authentication/SignUp"
 
 
 
@@ -19,6 +21,14 @@ import Apartment from "../pages/Apartment";
         {
             path:'/apartment',
             element:<Apartment/>,
+        },
+        {
+            path:'/login',
+            element:<Login/>,
+        },
+        {
+            path:'/signUp',
+            element: <SignUp/>
         }
     ]
   },
