@@ -3,6 +3,7 @@ import { BiCart } from "react-icons/bi";
 import { CiLogout } from "react-icons/ci";
 import { VscDiffRenamed } from "react-icons/vsc";
 import { Link, NavLink } from "react-router-dom";
+import logo from '../../assets/logo.png'
 
 
 const Navbar = () => {
@@ -100,7 +101,7 @@ const Navbar = () => {
         </div>
         <div className='flex flex-row-reverse justify-center items-center  gap-0 md:gap-3 btn btn-ghost '>
         <Link to='/' className=" text-lg md:text-2xl lg:text-3xl gap-0 text-green-600 font-medium md:font-extrabold">Green<span className="text-blue-500">House</span></Link>
-        {/* <img className='w-8 h-8'  src={logo} alt="" /> */}
+        <img className='w-8 h-8 hidden md:flex'  src={logo} alt="" />
         </div>
       </div>
       <div className="navbar-end hidden lg:flex">

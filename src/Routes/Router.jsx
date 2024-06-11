@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home/Home";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 
 
@@ -8,6 +9,7 @@ import Home from "../pages/Home/Home";
   {
     path: "/",
     element:<MainLayout/>,
+    errorElement:<ErrorPage/>,
     children:[
         {
             path:'/',
