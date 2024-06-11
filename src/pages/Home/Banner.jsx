@@ -42,6 +42,7 @@ const Banner = () => {
       >
         <SwiperSlide >
             <img src={img1} alt="" />
+           
             
         </SwiperSlide>
         <SwiperSlide>

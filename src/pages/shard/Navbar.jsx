@@ -89,7 +89,7 @@ const Navbar = () => {
             }>Home</NavLink>
           </li>
           <li>
-            <NavLink to='/allJobs' className={({ isActive }) =>
+            <NavLink to='/apartment' className={({ isActive }) =>
               isActive
                 ? "text-[#23BE0A] text-lg  "
                 : "text-lg"
@@ -114,7 +114,7 @@ const Navbar = () => {
             }>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/allJobs"   className={({ isActive }) =>
+            <NavLink to="/apartment"   className={({ isActive }) =>
               isActive
                 ? "text-blue-500 font-bold text-xl  "
                 : "font-bold text-xl"
