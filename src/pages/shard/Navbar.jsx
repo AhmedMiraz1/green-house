@@ -4,6 +4,7 @@ import { CiLogout } from "react-icons/ci";
 import { VscDiffRenamed } from "react-icons/vsc";
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/logo.png'
+import useAuth from "../../hooks/useAuth";
 
 
 const Navbar = () => {
@@ -21,6 +22,7 @@ const Navbar = () => {
         setTheme("light");
       }
     };
+    const { user, logOut } = useAuth()
 
     // const { user, logOut } = useContext(AuthContext);
     // const [isAdmin]=useAdmin()
@@ -127,35 +129,41 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
 
-      {
-        //   <div className="dropdown dropdown-end">
-        //       <label tabIndex={0} className="btn btn-ghost btn-circle avatar ">
-        //         <div className="w-10 rounded-full">
-        //           <img referrerPolicy='no-referrer' src={user?.photoURL || "https://i.ibb.co/YfrC5vT/user-removebg-preview.png"} alt="Mehedi" />
-                 
-
-        //         </div>
-        //       </label>
-        //       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[3]  shadow-base-100 bg-slate-300 rounded-box w-52 border ">
-        //         <li  className="border px-6 py-2  rounded-xl flex flex-row ">
-        //          <button className="btn btn-sm btn-ghost "> <span><VscDiffRenamed /></span>{user?.displayName || "User Not found"} </button>
-        //         </li>
+     
+          {
+            user ? <div className="dropdown dropdown-end">
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar ">
+              <div className="w-10 rounded-full">
+                <img referrerPolicy='no-referrer' src={user?.photoURL || "https://i.ibb.co/YfrC5vT/user-removebg-preview.png"} alt="Mehedi" />
                
-        //         <li  className="border px-6 py-2 rounded-xl">
-        //          <button onClick={logOut}
-        //           className="btn btn-sm btn-ghost "> <span><CiLogout /></span>Logout </button>
-        //         </li>
 
-        //       </ul>
+              </div>
+            </label>
+            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[3]  shadow-base-100 bg-slate-300 rounded-box w-52 border ">
+                <li><Link>
+                Dashboard
+                </Link></li>
+              <li  className="border px-6 py-2  rounded-xl flex flex-row ">
+               <button className="btn btn-sm btn-ghost "> <span><VscDiffRenamed /></span>{user?.displayName || "User Not found"} </button>
+              </li>
+             
+              <li  className="border px-6 py-2 rounded-xl">
+               <button onClick={logOut}
+                className="btn btn-sm btn-ghost "> <span><CiLogout /></span>Logout </button>
+              </li>
 
-        //     </div>
-            
-           <div className="flex gap-0">
-             <Link to= '/login' className="btn bg-blue-500 border-none btn-outline text-sm md:text-xl lg:text-2xl md:font-bold text-white">LogIn</Link>
-            
-            
-           </div>
-}
+            </ul>
+
+          </div>
+          :
+          
+         <div className="flex gap-0">
+           <Link to= '/login' className="btn bg-blue-500 border-none btn-outline text-sm md:text-xl lg:text-2xl md:font-bold text-white">LogIn</Link>
+          
+          
+         </div>
+          }
+
       <label className="cursor-pointer grid place-items-center mr-3 md:ml-4">
           <input
             onChange={handelToggle}

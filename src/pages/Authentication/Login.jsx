@@ -6,17 +6,29 @@ import SocialLogin from '../shard/SocialLogin';
 const Login = () => {
   return (
     <div className="mt-12 md:my-40   ">
-      <div className=" flex flex-col  md:flex-row container mx-auto md:px-16 rounded-lg shadow-xl">
-        <div className="w-full">
-          <img className='h-[70vh] w-full hidden md:flex' src={login} alt="" />
-        </div>
-        <div className="  w-full  ">
+      <div className=" w-full md:w-1/2 mx-auto rounded-lg shadow-xl">
+        {/* <div className="w-full">
+          <img className=' w-full hidden md:flex' src={login} alt="" />
+        </div> */}
+        <div className="  w-full   ">
           <form className="card-body">
             <h1 className='text-center font-bold text-4xl text-blue-500'> Welcome Back !</h1>
             <h2 className='text-center font-bold text-3xl my-7 text-blue-500'> Login to your account </h2>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Email</span>
+                <span className="label-text">Your Name</span>
+              </label>
+              <input
+                type="name"
+                placeholder="Enter your email"
+                className="input input-bordered"
+                required
+                name="name"
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text"> Your Email</span>
               </label>
               <input
                 type="email"
@@ -28,7 +40,19 @@ const Login = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="label-text">Your Photo URL </span>
+              </label>
+              <input
+                type="text"
+                placeholder="Enter your email"
+                className="input input-bordered"
+                required
+                name="photo"
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Your Password</span>
               </label>
               <input
                 type="password"
@@ -50,7 +74,7 @@ const Login = () => {
             <SocialLogin/>
           </div>
 
-          <p className='text-center mb-4 text-black text-lg font-bold'>New here ? <Link to='/signUP' className='text-blue-500 font-bold text-lg md:text-xl'>SignUp</Link></p>
+          <p className='text-center  text-black text-lg font-bold'>New here ? <Link to='/signUp' className='text-blue-500 font-bold text-lg md:text-xl'>SignUp</Link></p>
         </div>
       </div>
     </div>
