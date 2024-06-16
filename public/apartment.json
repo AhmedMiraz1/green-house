@@ -1,0 +1,142 @@
+[
+    {
+        "image": "https://i.ibb.co/T04QwLS/norbert-levajsics-o-TJ92-KUXHls-unsplash.jpg",
+        "floor_no": 1,
+        "block_name": "A",
+        "apartment_no": 101,
+        "rent": 1200
+    },
+    {
+        "image": "https://i.ibb.co/hFkddgL/jarek-ceborski-jn7u-Ve-Cdf6-U-unsplash-1.jpg",
+        "floor_no": 2,
+        "block_name": "B",
+        "apartment_no": 202,
+        "rent": 1300
+    },
+    {
+        "image": "https://i.ibb.co/GPystrB/frames-for-your-heart-Fqqi-Av-Jejto-unsplash.jpg",
+        "floor_no": 3,
+        "block_name": "C",
+        "apartment_no": 303,
+        "rent": 1400
+    },
+    {
+        "image": "https://i.ibb.co/7RWvpsd/high-angle-living-room-background-zoom-calls.jpg",
+        "floor_no": 4,
+        "block_name": "D",
+        "apartment_no": 404,
+        "rent": 1500
+    },
+    {
+        "image": "https://i.ibb.co/vD4zkX0/pexels-turnkey-apartments-1077810297-20604656.jpg",
+        "floor_no": 5,
+        "block_name": "E",
+        "apartment_no": 505,
+        "rent": 1600
+    },
+    {
+        "image": "https://i.ibb.co/tzgF4nx/pexels-turnkey-apartments-1077810297-20604661.jpg",
+        "floor_no": 6,
+        "block_name": "F",
+        "apartment_no": 606,
+        "rent": 1700
+    },
+    {
+        "image": "https://i.ibb.co/fFC255W/pexels-turnkey-apartments-1077810297-20604659.jpg",
+        "floor_no": 7,
+        "block_name": "G",
+        "apartment_no": 707,
+        "rent": 1800
+    },
+    {
+        "image": "https://i.ibb.co/w4K58J3/pexels-roshan-patel-1084731939-20653892.jpg",
+        "floor_no": 8,
+        "block_name": "H",
+        "apartment_no": 808,
+        "rent": 1900
+    },
+    {
+        "image": "https://i.ibb.co/NVbLKgs/pexels-roshan-patel-1084731939-20653873.jpg",
+        "floor_no": 9,
+        "block_name": "I",
+        "apartment_no": 909,
+        "rent": 2000
+    },
+    {
+        "image": "https://i.ibb.co/8YKjJvJ/pexels-heyho-6180667.jpg",
+        "floor_no": 10,
+        "block_name": "J",
+        "apartment_no": 1010,
+        "rent": 2100
+    },
+    {
+        "image": "https://i.ibb.co/C2709nj/pexels-heyho-6908552.jpg",
+        "floor_no": 11,
+        "block_name": "K",
+        "apartment_no": 1111,
+        "rent": 2200
+    },
+    {
+        "image": "https://i.ibb.co/F76n06F/pexels-rachel-claire-4857757.jpg",
+        "floor_no": 12,
+        "block_name": "L",
+        "apartment_no": 1212,
+        "rent": 2300
+    },
+    {
+        "image": "https://i.ibb.co/b3wwLYz/3d-rendering-modern-luxury-hotel-office-reception-meeting-lounge.jpg",
+        "floor_no": 13,
+        "block_name": "M",
+        "apartment_no": 1313,
+        "rent": 2400
+    },
+    {
+        "image": "https://i.ibb.co/484qc1N/pillow-sofa.jpg",
+        "floor_no": 14,
+        "block_name": "N",
+        "apartment_no": 1414,
+        "rent": 2500
+    },
+    {
+        "image": "https://i.ibb.co/88vYG6Z/modern-empty-room-1.jpg",
+        "floor_no": 15,
+        "block_name": "O",
+        "apartment_no": 1515,
+        "rent": 2600
+    },
+    {
+        "image": "https://i.ibb.co/TqJh8QP/room-interior-design.jpg",
+        "floor_no": 16,
+        "block_name": "P",
+        "apartment_no": 1616,
+        "rent": 2700
+    },
+    {
+        "image": "https://i.ibb.co/LRbJsGh/modern-empty-room.jpg",
+        "floor_no": 17,
+        "block_name": "Q",
+        "apartment_no": 1717,
+        "rent": 2800
+    },
+    {
+        "image": "https://i.ibb.co/DgxJZcy/blurred-room-with-many-cushions.jpg",
+        "floor_no": 18,
+        "block_name": "R",
+        "apartment_no": 1818,
+        "rent": 2900
+    },
+    {
+        "image": "https://i.ibb.co/k8jN9D9/empty-unfurnished-brand-new-apartment.jpg",
+        "floor_no": 19,
+        "block_name": "S",
+        "apartment_no": 1919,
+        "rent": 3000
+    },
+    {
+        "image": "https://i.ibb.co/xFSMRNK/living-room-with-nobody-it.jpg",
+        "floor_no": 20,
+        "block_name": "T",
+        "apartment_no": 2020,
+        "rent": 3100
+    }
+]

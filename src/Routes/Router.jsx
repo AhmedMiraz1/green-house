@@ -2,9 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home/Home";
 import ErrorPage from "../ErrorPage/ErrorPage";
-import Apartment from "../pages/Apartment";
 import Login from "../pages/Authentication/Login";
 import SignUp from "../pages/Authentication/SignUp"
+import Apartments from "../pages/apartment/Apartments";
 
 
 
@@ -20,7 +20,7 @@ import SignUp from "../pages/Authentication/SignUp"
         },
         {
             path:'/apartment',
-            element:<Apartment/>,
+            element:<Apartments/>,
         },
         {
             path:'/login',

@@ -11,8 +11,8 @@ const Footer = () => {
                     <div className="flex flex-col">
                     <h1 className="uppercase text-xl md:text-2xl lg:text-3xl">Green House</h1>
                     
-                   <Link to='/'> <a href="">Home</a></Link>
-                   <Link to='/apartment'> <a href="">Apartment</a></Link>
+                   <a href="">Home</a>
+                   <a href="">Apartment</a>
                     <a href="">Mon - Fri: 08:00 - 22:00</a>
                     <a href="">Sat - Sun: 10:00 - 23:00</a>
                     </div>
