@@ -5,6 +5,7 @@ import { VscDiffRenamed } from "react-icons/vsc";
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/logo.png'
 import useAuth from "../../hooks/useAuth";
+import { MdDashboard } from "react-icons/md";
 
 
 const Navbar = () => {
@@ -139,15 +140,16 @@ const Navbar = () => {
 
               </div>
             </label>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[3]  shadow-base-100 bg-slate-300 rounded-box w-52 border ">
-                <li><Link>
+            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[3]  shadow-base-100 bg-black opacity-20 rounded-box w-52  flex flex-col items-center font-bold text-lg md:text-xl ">
+                <li><Link to='/dashboard' className="px-6 py-2  ">
+                  <MdDashboard/>
                 Dashboard
                 </Link></li>
-              <li  className="border px-6 py-2  rounded-xl flex flex-row ">
+              <li  className=" px-6 py-2   flex flex-row ">
                <button className="btn btn-sm btn-ghost "> <span><VscDiffRenamed /></span>{user?.displayName || "User Not found"} </button>
               </li>
              
-              <li  className="border px-6 py-2 rounded-xl">
+              <li  className=" px-6 py-2 ">
                <button onClick={logOut}
                 className="btn btn-sm btn-ghost "> <span><CiLogout /></span>Logout </button>
               </li>

@@ -5,6 +5,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Login from "../pages/Authentication/Login";
 import SignUp from "../pages/Authentication/SignUp"
 import Apartments from "../pages/apartment/Apartments";
+import Dashboard from "../layout/Dashboard";
 
 
 
@@ -32,6 +33,14 @@ import Apartments from "../pages/apartment/Apartments";
         }
     ]
   },
+
+  {
+    path:'dashboard',
+    element:<Dashboard/>,
+    children:[
+        
+    ]
+  }
 ]);
 
 
