@@ -1,9 +1,10 @@
 import { BiMenu } from "react-icons/bi";
-import { FaAd, FaBook, FaCalendar, FaCartPlus, FaFileContract, FaHome, FaList, FaUsers, FaUtensils } from "react-icons/fa";
-import { FaMoneyCheckDollar, FaShop } from "react-icons/fa6";
-import { IoMdMenu } from "react-icons/io";
+import { FaAd, FaBook, FaCalendar, FaCartPlus,  FaHome, FaList, FaUsers, FaUtensils } from "react-icons/fa";
+import { FaMoneyCheckDollar} from "react-icons/fa6";
 import { NavLink, Outlet } from "react-router-dom";
 import useAdmin from "../hooks/useAdmin";
+import { ImProfile } from "react-icons/im";
+import { MdApartment } from "react-icons/md";
 
 
 const Dashboard = () => {
@@ -12,12 +13,12 @@ const Dashboard = () => {
 
     return (
          <div className="flex">
-      <div className="w-64 min-h-screen  bg-orange-400">
-        <ul className="menu p-4 uppercase">
+      <div className="w-64 min-h-screen  bg-blue-500">
+        <ul className="menu p-4 uppercase text-white">
 
 
-        {
-            isAdmin ? <>
+        {/* {
+            isAdmin ? <> */}
             {/* admin links */}
             <li>
             <NavLink to="/dashboard/admin-home">
@@ -26,9 +27,9 @@ const Dashboard = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/dashboard/add-items">
+            <NavLink to="/dashboard/manage-members">
                 <FaUtensils/>
-             Add items
+                Manage Members
             </NavLink>
           </li>
           <li>
@@ -52,20 +53,20 @@ const Dashboard = () => {
           
             
             
-            </> :
+            {/* </> :
 
             // user links
-            <>
+            <> */}
             <li>
-            <NavLink to="/dashboard/user-home">
-                <FaHome/>
-              User Home
+            <NavLink to="/dashboard/my-profile">
+                <ImProfile/>
+                My Profile
             </NavLink>
           </li>
           <li>
-            <NavLink to="/dashboard/reservation">
+            <NavLink to="/dashboard/announcements">
                 <FaCalendar/>
-             Reservation
+                Announcements
             </NavLink>
           </li>
           <li>
@@ -92,8 +93,8 @@ const Dashboard = () => {
               My Booking
             </NavLink>
           </li>
-            </>
-          }
+            {/* </>
+          } */}
           
             
             
@@ -116,23 +117,12 @@ const Dashboard = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/menu">
-            <IoMdMenu />
+            <NavLink to="/apartment">
+            <MdApartment />
              Menu
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/order/salad">
-                <FaShop/>
-             Shop
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">
-                <FaFileContract/>
-              Contact
-            </NavLink>
-          </li>
+          
         </ul>
       </div>
       <div className="flex-1 p-10">

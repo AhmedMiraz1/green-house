@@ -6,6 +6,9 @@ import Login from "../pages/Authentication/Login";
 import SignUp from "../pages/Authentication/SignUp"
 import Apartments from "../pages/apartment/Apartments";
 import Dashboard from "../layout/Dashboard";
+import ManageMembers from "../pages/AdminDashboard/ManageMembers";
+import MyProfile from "../pages/useDashboard/MyProfile";
+import Announcements from "../pages/useDashboard/Announcements";
 
 
 
@@ -38,7 +41,29 @@ import Dashboard from "../layout/Dashboard";
     path:'dashboard',
     element:<Dashboard/>,
     children:[
-        
+        //user route 
+        {
+            path:'my-profile',
+            element:<MyProfile/>
+        },
+        {
+            path:'announcements',
+            element:<Announcements/>
+        },
+
+
+
+
+
+
+
+        // admin route
+        {
+            path:'manage-members',
+            element:<ManageMembers/>,
+
+        }
+
     ]
   }
 ]);
