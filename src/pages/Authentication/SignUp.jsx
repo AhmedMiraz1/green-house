@@ -3,6 +3,7 @@ import SocialLogin from "../shard/SocialLogin";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 
 const SignUp = () => {
@@ -14,7 +15,7 @@ const SignUp = () => {
       } = useForm();
       const {createUser, updateUserProfile,  }=useAuth()
       const navigate = useNavigate()
-    //   const axiosPublic =useAxiosPublic()
+      const axiosPublic =useAxiosPublic()
 
       const onSubmit = (data) => {
         console.log(data);
@@ -23,25 +24,25 @@ const SignUp = () => {
             console.log(user);
             updateUserProfile(data.name, data.photoURL)
             .then(()=> {
-            //   const userInfo ={
-            //     name:data.name,
-            //     email: data.email
-            //   }
-            //   axiosPublic.post('/users', userInfo)
-            //   .then(res=> {
-            //     if(res.data.insertedId){
-            //       console.log('user added to the database');
-            //       reset();
-            //       Swal.fire({
-            //           position: "top-end",
-            //           icon: "success",
-            //           title: "User created successfully",
-            //           showConfirmButton: false,
-            //           timer: 1500
-            //         });
-            //         navigate('/')                                
-            //     }
-            //   })
+              const userInfo ={
+                name:data.name,
+                email: data.email
+              }
+              axiosPublic.post('/users', userInfo)
+              .then(res=> {
+                if(res.data.insertedId){
+                  console.log('user added to the database');
+                  reset();
+                  Swal.fire({
+                      position: "top-end",
+                      icon: "success",
+                      title: "User created successfully",
+                      showConfirmButton: false,
+                      timer: 1500
+                    });
+                    navigate('/')                                
+                }
+              })
                 
             })
     

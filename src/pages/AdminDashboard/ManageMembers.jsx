@@ -1,6 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
+import { FaTrashAlt, FaUserAlt } from "react-icons/fa";
+
 
 
 const ManageMembers = () => {
@@ -26,7 +28,7 @@ const ManageMembers = () => {
               Swal.fire({
                   position: "top-end",
                   icon: "success",
-                  title: `${user?.name} Is Admin now!`,
+                  title:  'Is Admin now!',
                   showConfirmButton: false,
                   timer: 1500
                 });
@@ -47,7 +49,7 @@ const ManageMembers = () => {
         confirmButtonText: "Yes, delete it!",
       }).then((result) => {
         if (result.isConfirmed) {
-          axiosSecure.delete(`/users/${user}`).then((res) => {
+          axiosSecure.delete(`/users/${user._id}`).then((res) => {
             if (res.data.deletedCount > 0) {
               refetch()
               Swal.fire({
@@ -63,10 +65,8 @@ const ManageMembers = () => {
     };
   return (
     <div>
-      <div
-      // className="flex justify-evenly my-4"
-      >
-        {/* <h2 className="text-3xl">All users :</h2> */}
+      <div>
+     
         <h2 className="text-3xl">Total users : {users?.length}</h2>
       </div>
 
@@ -89,23 +89,24 @@ const ManageMembers = () => {
                 <td>{user?.name}</td>
                 <td>{user?.email}</td>
                 <td>
-                  {user.role === "admin" ? (
+                  {user.role === "admin" ? 
                     "Admin"
-                  ) : (
+                  : 
                     <button
                       onClick={() => handelMakeAdmin(user)}
-                      className="btn  btn-xs bg-[#D1A054] text-white  px-4 "
+                      className="btn  btn-xs bg-blue-500 text-white  px-4 "
                     >
+                        <FaUserAlt/>
                       
                     </button>
-                  )}
+                }
                 </td>
                 <td>
                   <button
-                    onClick={() => handelDelete(user._id)}
+                    onClick={() => handelDelete(user)}
                     className="btn btn-ghost btn-xs bg-red-600 text-white px-4 "
                   >
-                    {/* <FaTrashAlt /> */}
+                    <FaTrashAlt />
                   </button>
                 </td>
               </tr>

@@ -1,15 +1,16 @@
 import { BiMenu } from "react-icons/bi";
-import { FaAd, FaBook, FaCalendar, FaCartPlus,  FaHome, FaList, FaUsers, FaUtensils } from "react-icons/fa";
-import { FaMoneyCheckDollar} from "react-icons/fa6";
+import {  FaBook, FaCalendar,   FaHome,  FaUsers, FaUtensils } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
-import useAdmin from "../hooks/useAdmin";
+// import useAdmin from "../hooks/useAdmin";
 import { ImProfile } from "react-icons/im";
 import { MdApartment } from "react-icons/md";
+import { RiAdminFill } from "react-icons/ri";
+import useAdmin from "../hooks/useAdmin";
 
 
 const Dashboard = () => {
 
-    const  [isAdmin ]= useAdmin()
+    const  [isAdmin] = useAdmin() 
 
     return (
          <div className="flex">
@@ -17,13 +18,15 @@ const Dashboard = () => {
         <ul className="menu p-4 uppercase text-white">
 
 
-        {/* {
-            isAdmin ? <> */}
+       
+           {
+            isAdmin ? 
+            <>
             {/* admin links */}
             <li>
             <NavLink to="/dashboard/admin-home">
-                <FaHome/>
-              admin home
+                <RiAdminFill/>
+              Admin Profile
             </NavLink>
           </li>
           <li>
@@ -50,13 +53,17 @@ const Dashboard = () => {
                 all users
             </NavLink>
           </li>
+            </>
+            :
+            <>
+             
           
             
             
-            {/* </> :
+          
 
-            // user links
-            <> */}
+            {/* // user links */}
+           
             <li>
             <NavLink to="/dashboard/my-profile">
                 <ImProfile/>
@@ -69,7 +76,18 @@ const Dashboard = () => {
                 Announcements
             </NavLink>
           </li>
-          <li>
+            </>
+           }
+
+
+
+
+
+
+
+
+
+          {/* <li>
             <NavLink to="/dashboard/payment-history">
             <FaMoneyCheckDollar />
             Payment history
@@ -78,7 +96,7 @@ const Dashboard = () => {
           <li>
             <NavLink to="/dashboard/cart">
                 <FaCartPlus/>
-             {/* ({cart.length} )My cart */}
+             
             </NavLink>
           </li>
           <li>
@@ -92,9 +110,8 @@ const Dashboard = () => {
                 <FaList/>
               My Booking
             </NavLink>
-          </li>
-            {/* </>
-          } */}
+          </li> */}
+           
           
             
             
@@ -108,7 +125,7 @@ const Dashboard = () => {
 
           {/* common links  */}
 
-          <div className="divider text-white"></div>
+          <div className="divider text-orange-500 "></div>
 
           <li>
             <NavLink to="/">
@@ -119,7 +136,7 @@ const Dashboard = () => {
           <li>
             <NavLink to="/apartment">
             <MdApartment />
-             Menu
+            Apartment
             </NavLink>
           </li>
           
