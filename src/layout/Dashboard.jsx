@@ -24,7 +24,7 @@ const Dashboard = () => {
             <>
             {/* admin links */}
             <li>
-            <NavLink to="/dashboard/admin-home">
+            <NavLink to="/dashboard/admin-profile">
                 <RiAdminFill/>
               Admin Profile
             </NavLink>
@@ -36,9 +36,9 @@ const Dashboard = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/dashboard/manage-items">
+            <NavLink to="/dashboard/make-announcement">
             <BiMenu />
-            manage items
+            Make announcement
             </NavLink>
           </li>
           <li>

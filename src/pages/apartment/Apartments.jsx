@@ -33,11 +33,7 @@ const Apartments = () => {
     console.log('apartment', apartments);
     console.log('count',count);
 
-    // const apartment = useApartment()
-    // console.log(apartment);
-    // setCount(apartment)
-
-    // console.log(count);
+    
     const numberOfPages = Math.ceil(count/itemsPerPage)
 
     const   pages = [...Array(numberOfPages).keys()].map(element => element+1)
