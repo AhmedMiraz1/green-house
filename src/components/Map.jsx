@@ -1,6 +1,8 @@
 import GoogleMapReact from 'google-map-react';
+import PropTypes from 'prop-types';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
 
 const Map = () => {
     const defaultProps = {
@@ -31,3 +33,7 @@ const Map = () => {
 };
 
 export default Map;
+
+AnyReactComponent.propTypes={
+text:PropTypes.string.isRequired
+}

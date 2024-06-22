@@ -1,13 +1,14 @@
-import { BiMenu } from "react-icons/bi";
-import {  FaBook, FaCalendar,   FaHome,  FaUsers, FaUtensils } from "react-icons/fa";
+
+import {  FaHome,   } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
-// import useAdmin from "../hooks/useAdmin";
 import { ImProfile } from "react-icons/im";
-import { MdAnnouncement, MdApartment, MdCardMembership } from "react-icons/md";
+import { MdAnnouncement, MdApartment, MdCardMembership, MdPayment, MdPayments } from "react-icons/md";
 import { RiAdminFill, RiCoupon2Fill } from "react-icons/ri";
 import useAdmin from "../hooks/useAdmin";
 import { PiBuildingApartment } from "react-icons/pi";
 import UseMember from "../hooks/UseMember";
+import { TfiAnnouncement } from "react-icons/tfi";
+import { CgProfile } from "react-icons/cg";
 
 
 const Dashboard = () => {
@@ -91,7 +92,7 @@ const Dashboard = () => {
                 && "text-green-500  "
                 
             }>
-                <FaUsers/>
+                <CgProfile/>
                 My Profile
             </NavLink>
           </li>
@@ -101,7 +102,7 @@ const Dashboard = () => {
                 && "text-green-500  "
                 
             }>
-                <FaUsers/>
+                <MdPayment/>
                 Make payment
             </NavLink>
           </li>
@@ -111,7 +112,7 @@ const Dashboard = () => {
                 && "text-green-500  "
                 
             }>
-                <FaUsers/>
+                <MdPayments/>
                 Payment History
             </NavLink>
           </li>
@@ -121,7 +122,7 @@ const Dashboard = () => {
                 && "text-green-500  "
                 
             }>
-                <FaUsers/>
+                <TfiAnnouncement/>
                 Announcements
             </NavLink>
           </li>
@@ -154,7 +155,7 @@ const Dashboard = () => {
                 && "text-green-500  "
                 
             }>
-                <FaCalendar/>
+                <TfiAnnouncement/>
                 Announcements
             </NavLink>
           </li>

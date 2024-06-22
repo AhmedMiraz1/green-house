@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { BiCart } from "react-icons/bi";
 import { CiLogout } from "react-icons/ci";
 import { VscDiffRenamed } from "react-icons/vsc";
 import { Link, NavLink } from "react-router-dom";
@@ -25,41 +24,7 @@ const Navbar = () => {
     };
     const { user, logOut } = useAuth()
 
-    // const { user, logOut } = useContext(AuthContext);
-    // const [isAdmin]=useAdmin()
-    // const [cart] = useCart();
-    // const navLink = (
-    //     <>
-    //       <li className="uppercase">
-    //         <NavLink>HOME</NavLink>
-    //       </li>
-    //       <li className="uppercase">
-    //         <NavLink>CONTACT us</NavLink>
-    //       </li>
-    //       {/* <li className="uppercase">
-    //         <NavLink to='/dashboard'>DASHBOARD</NavLink>
-    //       </li> */}
-         
-    //       <li className="uppercase">
-    //         <NavLink to="/menu">Our Menu</NavLink>
-    //       </li>
-    //       <li className="uppercase">
-    //         <NavLink to="/order/salad">Our Shop</NavLink>
-    //       </li>
-    // {
-    //   user&& isAdmin &&  <li className="uppercase">
-    //   <NavLink to='/dashboard/admin-home'>DASHBOARD</NavLink>
-    // </li>
     
-    // }
-    // {
-    //   user&& !isAdmin &&  <li className="uppercase">
-    //   <NavLink to='/dashboard/user-home'>DASHBOARD</NavLink>
-    //   </li>
-    // }
-    
-    //     </>
-    //   );
     return (
         <div className="navbar fixed z-10 bg-opacity-30 text-white bg-black container mx-auto">
       <div className="navbar-start">

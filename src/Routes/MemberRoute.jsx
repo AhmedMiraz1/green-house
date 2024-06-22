@@ -2,12 +2,16 @@ import { Navigate, useLocation } from "react-router-dom";
 import UseMember from "../hooks/UseMember";
 import useAuth from "../hooks/useAuth";
 
+import PropTypes from 'prop-types';
+
 
 const MemberRoute = ({children}) => {
     const { user, loading } = useAuth();
 
 
-  const [isAdmin, isAdminLoading] = UseMember();
+
+  
+    const [isAdmin, isAdminLoading] = UseMember();
   const location = useLocation();
 
   if (loading || isAdminLoading)
@@ -23,3 +27,7 @@ const MemberRoute = ({children}) => {
 };
 
 export default MemberRoute;
+
+MemberRoute.propTypes={
+    children:PropTypes.node.isRequired
+}

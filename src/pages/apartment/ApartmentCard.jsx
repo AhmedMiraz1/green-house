@@ -2,6 +2,7 @@ import Swal from "sweetalert2";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import { useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import PropTypes from 'prop-types';
 
 
 const ApartmentCard = ({card}) => {
@@ -85,3 +86,7 @@ const ApartmentCard = ({card}) => {
 };
 
 export default ApartmentCard;
+
+ApartmentCard.propTypes={
+  card:PropTypes.object.isRequired
+}
