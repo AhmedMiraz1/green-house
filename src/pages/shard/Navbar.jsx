@@ -110,7 +110,7 @@ const Navbar = () => {
       <div className="navbar-end hidden lg:flex">
         <ul className=" menu-horizontal px-1 gap-6">
           <li>
-            <NavLink to="/"   className={({ isActive }) =>
+            <NavLink to="/"  className={({ isActive }) =>
               isActive
                 ? "text-blue-500 font-bold text-xl  "
                 : "font-bold text-xl"

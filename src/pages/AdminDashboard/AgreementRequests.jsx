@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
 import Swal from "sweetalert2";
-import useAuth from "../../hooks/useAuth";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 
 const AgreementRequests = () => {
