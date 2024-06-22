@@ -61,14 +61,14 @@ const SignUp = () => {
         <div className="  w-full  ">
           <form onSubmit={handleSubmit(onSubmit)}  className="card-body">
             <h1 className='text-center font-bold text-4xl text-blue-500'> Welcome Back !</h1>
-            <h2 className='text-center font-bold text-3xl my-7 text-blue-500'> Login to your account </h2>
+            <h2 className='text-center font-bold text-3xl my-7 text-blue-500'> Sign to your account </h2>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Your Name</span>
               </label>
               <input
                 type="name"
-                placeholder="Enter your email"
+                placeholder="Enter your name"
                 className="input input-bordered"
                 required
                
@@ -100,7 +100,7 @@ const SignUp = () => {
               </label>
               <input
                 type="text"
-                placeholder="Enter your email"
+                placeholder="Enter your Photo"
                 className="input input-bordered"
                 required
                
