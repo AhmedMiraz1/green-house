@@ -2,7 +2,11 @@ import image from '../assets/apartment_banner.jpg'
 
 const AboutBuilding = () => {
     return (
-        <div className="my-16 flex justify-between flex-col-reverse lg:flex-row gap-6">
+       <div className='my-16'>
+
+        <h1 className="text-center text-2xl md:text-3xl  my-8 text-blue-600 font-bold uppercase underline">About the building</h1>
+       
+         <div className=" flex justify-between flex-col-reverse lg:flex-row gap-6">
       <div className=" w-full lg:w-[50%] text-center space-y-5 shadow-lg ">
         <h1 className="text-xl md:text-2xl lg:text-3xl text-blue-500 font-bold">Luxurious Living in the Heart of the City</h1>
         <p className="text-base font text-gray-400">
@@ -29,6 +33,7 @@ const AboutBuilding = () => {
         <img className="min-h-[70vh]" src={image} alt="" />
       </div>
     </div>
+       </div>
     );
 };
 

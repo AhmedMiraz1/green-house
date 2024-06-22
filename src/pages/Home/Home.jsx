@@ -1,5 +1,6 @@
 import AboutBuilding from "../../components/AboutBuilding";
 import Coupons from "../../components/Coupons";
+import Map from "../../components/Map";
 import Banner from "./Banner";
 
 
@@ -10,6 +11,7 @@ const Home = () => {
             <AboutBuilding/>
 
             <Coupons/>
+            <Map/>
             
         </div>
     );
