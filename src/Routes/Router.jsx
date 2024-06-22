@@ -13,6 +13,9 @@ import AdminRoute from "./AdminRoute";
 import PrivateRoute from "../Routes/PrivateRoute";
 import AdminProfile from "../pages/AdminDashboard/AdminProfile";
 import MakeAnnouncement from "../pages/AdminDashboard/MakeAnnouncement";
+import MemberProfile from "../pages/memberDashboard/MemberProfile";
+import AgreementRequests from "../pages/AdminDashboard/AgreementRequests";
+import ManageCoupons from "../pages/AdminDashboard/ManageCoupons";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +60,16 @@ export const router = createBrowserRouter([
         element: <Announcements />,
       },
 
+      //member routs
+      {
+        path: "announcements",
+        element: <Announcements />,
+      },
+      {
+        path: "member-profile",
+        element: <MemberProfile />,
+      },
+
       // admin route
 
       {
@@ -80,6 +93,23 @@ export const router = createBrowserRouter([
         element: (
           <AdminRoute>
             <MakeAnnouncement />
+          </AdminRoute>
+        ),
+      },
+
+      {
+        path: "agreement-requests",
+        element: (
+          <AdminRoute>
+            <AgreementRequests />
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "manage-coupons",
+        element: (
+          <AdminRoute>
+            <ManageCoupons />
           </AdminRoute>
         ),
       },

@@ -7,8 +7,7 @@ const MakeAnnouncement = () => {
     register,
     handleSubmit,
     reset
-    // watch,
-    // formState: { errors },
+   
   } = useForm();
   const axiosSecure=useAxiosSecure()
  

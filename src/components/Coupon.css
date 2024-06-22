@@ -1,0 +1,13 @@
+.slide {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide1{
+    background-image:linear-gradient(180deg, #020411e8 0%, rgba(7, 2, 17, 0.878) 100%), url("../assets/modern-business-center.jpg");
+}
