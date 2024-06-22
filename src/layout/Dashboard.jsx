@@ -7,13 +7,14 @@ import { MdAnnouncement, MdApartment, MdCardMembership } from "react-icons/md";
 import { RiAdminFill, RiCoupon2Fill } from "react-icons/ri";
 import useAdmin from "../hooks/useAdmin";
 import { PiBuildingApartment } from "react-icons/pi";
+import UseMember from "../hooks/UseMember";
 
 
 const Dashboard = () => {
 
     const  [isAdmin] = useAdmin() 
 
-    const isMember = false
+    const [isMember] = UseMember()
 
     return (
          <div className="flex">

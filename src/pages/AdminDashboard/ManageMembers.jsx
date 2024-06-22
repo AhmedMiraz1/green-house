@@ -96,7 +96,7 @@ const ManageMembers = () => {
                       onClick={() => handelMakeAdmin(user)}
                       className="btn  btn-xs bg-blue-500 text-white  px-4 "
                     >
-                        Users
+                         User 
                       
                     </button>
                 }
