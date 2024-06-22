@@ -78,7 +78,7 @@ const ApartmentCard = ({card}) => {
             </div>
             <button 
             onClick={handelAddToAgreement}
-             type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-blue-500 text-white btn text-lg md:text-xl ">Agreement button</button>
+             type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-blue-500 text-white btn text-lg md:text-xl ">Agreement</button>
         </div>
     </div>
     );

@@ -16,6 +16,8 @@ import MakeAnnouncement from "../pages/AdminDashboard/MakeAnnouncement";
 import MemberProfile from "../pages/memberDashboard/MemberProfile";
 import AgreementRequests from "../pages/AdminDashboard/AgreementRequests";
 import ManageCoupons from "../pages/AdminDashboard/ManageCoupons";
+import MakePayment from "../pages/memberDashboard/MakePayment";
+import MemberRoute from "./MemberRoute";
 
 export const router = createBrowserRouter([
   {
@@ -61,13 +63,31 @@ export const router = createBrowserRouter([
       },
 
       //member routs
-      {
-        path: "announcements",
-        element: <Announcements />,
-      },
+
       {
         path: "member-profile",
-        element: <MemberProfile />,
+        element: (
+          <MemberRoute>
+            <MemberProfile />
+          </MemberRoute>
+        ),
+      },
+
+      {
+        path: "make-payment",
+        element: (
+          <MemberRoute>
+            <MakePayment />
+          </MemberRoute>
+        ),
+      },
+      {
+        path: "announcements",
+        element: (
+          <MemberRoute>
+            <Announcements />
+          </MemberRoute>
+        ),
       },
 
       // admin route
