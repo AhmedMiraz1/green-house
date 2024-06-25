@@ -14,7 +14,7 @@ const PaymentHistory = () => {
         }
     })
 
-    console.log(payments);
+    // console.log(payments);
     return (
         
         <div className="overflow-x-auto rounded-t-2xl">

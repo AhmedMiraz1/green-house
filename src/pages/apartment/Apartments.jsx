@@ -30,8 +30,8 @@ const Apartments = () => {
         getCount()
     }, [axiosPublic])
 
-    console.log('apartment', apartments);
-    console.log('count',count);
+    // console.log('apartment', apartments);
+    // console.log('count',count);
 
     
     const numberOfPages = Math.ceil(count/itemsPerPage)
@@ -39,7 +39,7 @@ const Apartments = () => {
     const   pages = [...Array(numberOfPages).keys()].map(element => element+1)
 
     const handelPagination =(value)=> {
-        console.log(value);
+        // console.log(value);
         setCurrentPage(value)
     }
     return (

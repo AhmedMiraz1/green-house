@@ -8,15 +8,7 @@ const MakePayment = () => {
 
     const [cart] = useAgreement();
 
-    // const axiosSecure = useAxiosSecure();
-
-    // const {  data: agreement = [] } = useQuery({
-    //   queryKey: ["agreement"],
-    //   queryFn: async () => {
-    //     const res = await axiosSecure.get("/agreement");
-    //     return res.data;
-    //   },
-    // });
+    
 
  
     return (

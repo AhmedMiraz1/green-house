@@ -60,7 +60,7 @@ const ApartmentCard = ({card}) => {
           if (result.isConfirmed) {
             // send the user login page
             navigate("/login", {state:{from:location}} );
-            console.log(navigate);
+            // console.log(navigate);
           }
         });
       }
