@@ -5,7 +5,7 @@ import CheckoutForm from "./CheckoutForm";
 
 
 // TODO : add publishable key 
-const stripePromise = loadStripe(import.meta.env.VITE_Payment_Gateway_Pk)
+const stripePromise = loadStripe(import.meta.env.VITE_PYMENT_GETWAY_PK)
 
 const Payment = () => {
     return (

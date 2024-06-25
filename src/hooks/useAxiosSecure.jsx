@@ -4,7 +4,7 @@ import useAuth from "./useAuth";
 
 
 const axiosSecure = axios.create({
-  baseURL: "https://b9-12-server-lemon.vercel.app",
+  baseURL: "http://localhost:5000",
 });
 const useAxiosSecure = () => {
 
@@ -40,22 +40,6 @@ axiosSecure.interceptors.response.use(function(response){
 })
 
 
-//    axiosSecure.interceptors.response.use(function(response){
-//     return response
-//    }, 
-//     async(error)=>{
-//     const status= error.response.status;
-
-//     // for 401 or 403 logOut the use and move to the user  login page 
-//     if(status === 401  || status === 403){
-//       await logOut()
-//       navigate('/login')
-
-//     }
-
-//     return Promise.reject(error)
-
-//    })
   
   return axiosSecure;
 };
